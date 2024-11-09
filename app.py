@@ -16,7 +16,7 @@ else:
     st.write("API Key missing from secrets")
 
 # Streamlit APP Title and Subtitle
-st.title("🦜 LangChain: Summarize Text From YT or Website")
+st.title("🦜 LangChain: Summarize Text From YouTube or Website")
 st.subheader("Summarize URL")
 
 # Get the URL (YT or website) to be summarized
