@@ -50,7 +50,7 @@ def load_youtube_content(url):
     return description
 
 # Button to start summarization
-if st.button("Summarize the Content from YT or Website"):
+if st.button("Summarize the Content from Website"):
     # Validate inputs
     if not generic_url.strip():
         st.error("Please provide the information to get started")
