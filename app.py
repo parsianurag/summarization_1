@@ -7,7 +7,7 @@ from langchain_community.document_loaders import UnstructuredURLLoader
 import yt_dlp  # yt-dlp for YouTube video processing
 
 # Set page configuration as the first Streamlit command
-st.set_page_config(page_title="LangChain: Summarize Text From YT or Website", page_icon="🦜")
+st.set_page_config(page_title="LangChain: Summarize Text From Website", page_icon="🦜")
 
 # Check if the API key is accessible
 if "GROQ_API_KEY" in st.secrets:
@@ -16,7 +16,7 @@ else:
     st.write("API Key missing from secrets")
 
 # Streamlit APP Title and Subtitle
-st.title("🦜 LangChain: Summarize Text From YouTube or Website")
+st.title("🦜 LangChain: Summarize Text From Website")
 st.subheader("Summarize URL")
 
 # Get the URL (YT or website) to be summarized
