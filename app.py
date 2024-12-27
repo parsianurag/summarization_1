@@ -23,7 +23,7 @@ st.subheader("Summarize URL")
 generic_url = st.text_input("URL", label_visibility="collapsed")
 
 # Initialize the Gemma model using the Groq API key from Streamlit secrets
-llm = ChatGroq(model="Gemma2-9b-It", groq_api_key=st.secrets["GROQ_API_KEY"])
+llm = ChatGroq(model="gemma2-9b-it", groq_api_key=st.secrets["GROQ_API_KEY"])
 
 prompt_template = """
 Provide a summary of the following content in 300 words:
